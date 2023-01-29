@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos81ew",
+    "Slug": "pampa5",
+    "Status": "In progress",
+    "Title": "Parallel Artificial Membrane Permeability Assay 5.0",
+    "Description": "PAMPA 5.0 is often used to determine permeability across the membranes as it provides useful values for measuring absorption, distribution, metabolism, and elimination (ADME) of compounds in the body.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "pampa5.0",
+        "permeability"
+    ],
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/35030421/",
+    "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
+    "License": "MIT"
 }
