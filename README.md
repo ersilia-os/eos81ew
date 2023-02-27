@@ -13,6 +13,7 @@ Cell membrane permeability is important for determining oral absorption of drug 
 A drug needs to have the ability to cross the cell membranes to reach the target site and achieve the desired concentration to produce a desirable pharmacological response. By measuring how permeable substances are across the membrane, PAMPA can estimate how easily a drug can penetrate cell membranes in the body and enter the bloodstream.
 Drugs that have poor permeability have a lower drug absorption rate, which can render the drug ineffective. Poor permeability of drugs also leads to other issues, such as challenges with toxicity and interactions with other drugs.
 </p>
+
 <p align="justify">
 This data was provided by the National Center for Advancing Translational Sciences (NCATS). A probability of below 0.5 is considered highly permeable. Probability of 0.5 or greater is considered low permeability. 
 </p>
