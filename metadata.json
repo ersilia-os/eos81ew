@@ -1,22 +1,21 @@
-{
+{    
     "Identifier": "eos81ew",
-    "Slug": "pampa5",
+    "Slug": "parallel-artificial-membrane-permeability-assay-5",
     "Status": "In progress",
-    "Title": "Parallel Artificial Membrane Permeability Assay 5.0",
-    "Description": "PAMPA 5.0 is often used to determine permeability across the membranes as it provides useful values for measuring absorption, distribution, metabolism, and elimination (ADME) of compounds in the body.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Title": "Parallel Artificial Membrane Permeability Assay (PAMPA) 5",
+    "Description": "Cell membrane permeability is important for determining oral absorption and bioavailability of drug molecule. Parallel artificial membrane permeability assay (PAMPA) is a low-cost alternative to cellular models for early ADME screening.",
+    "Mode": "Pretrained",
+    "Task": ["Classification"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Probability"],
+    "Output Type": ["Float"],
+    "Output Shape": "Single",
+    "Interpretation": "It is a classification model which returns the probability of a compound having poor permeability (>=0.5: low permeability), and the probability of a compound being highly permeable (<0.5: moderate or high permeability)",
     "Tag": [
-        "pampa5.0",
-        "permeability"
+        "ADME"
     ],
-    "Publication": "https://pubmed.ncbi.nlm.nih.gov/35030421/",
-    "Source Code": "https://github.com/ncats/ncats-adme/tree/master",
-    "License": "MIT"
+    "Publication": "https://www.sciencedirect.com/science/article/pii/S0968089621005964",
+    "Source Code": "https://github.com/ncats/ncats-adme",
+    "License": "None"
 }
