@@ -1,45 +1,40 @@
-# **Parallel Artificial Membrane Permeability Assay (PAMPA) 5**
+# Parallel Artificial Membrane Permeability Assay 5
 
-## **Model identifiers**
-- Slug: parallel-artificial-membrane-permeability-assay-5
-- Ersilia ID: eos81ew
-- Tags: ADME
-#
-## **Model description**
-<p align="justify">
-Cell membrane permeability is important for determining oral absorption of drug molecules. Parallel Artificial Membrane Permeability Assay (PAMPA) 5 is used to measure the permeability of a substance across an artificial membrane. It is a cheap alternative to cellular models for early ADME screening.
-</p>
-<p align="justify">
-A drug needs to have the ability to cross the cell membranes to reach the target site and achieve the desired concentration to produce a desirable pharmacological response. By measuring how permeable substances are across the membrane, PAMPA can estimate how easily a drug can penetrate cell membranes in the body and enter the bloodstream.
-Drugs that have poor permeability have a lower drug absorption rate, which can render the drug ineffective. Poor permeability of drugs also leads to other issues, such as challenges with toxicity and interactions with other drugs.
-</p>
+Parallel Artificial Membrane Permeability is an in vitro surrogate to determine the permeability of drugs across cellular membranes. PAMPA at pH 5 was experimentally determined in a dataset of 5,473 unique compounds by the NIH-NCATS. 50% of the dataset was used to train a classifier (SVM) to predict the permeability of new compounds, and validated on the remaining 50% of the data, rendering an AUC = 0.88. The Peff was converted to logarithmic, log Peff value lower than 2.0 were considered to have low to moderate permeability, and those with a value higher than 2.5 were considered as high-permeability compounds. Compounds with a value between 2.0 and 2.5 were omitted from the dataset.
 
-<p align="justify">
-This data was provided by the National Center for Advancing Translational Sciences (NCATS). A probability of below 0.5 is considered highly permeable. Probability of 0.5 or greater is considered low permeability. 
-</p>
+## Identifiers
 
-- Input: SMILES
-- Output: SMILES
-#
-## **Source code**
+* EOS model ID: `eos81ew`
+* Slug: `ncats-pampa5`
 
-Cite the source publication
-[Using in vitro ADME data for lead compound selection: An emphasis on PAMPA pH 5 permeability and oral bioavailability](https://www.sciencedirect.com/science/article/pii/S0968089621005964)
+## Characteristics
 
-- Code: [NCATS-ADME](https://github.com/ncats/ncats-adme.git)
-- Checkpoints: include the link to the checkpoints used if model is a pretrained model
-#
-## **License**
-GNU General Public License v3.0.
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Classification`
+* Output: `Probability`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Probability of a compound being poorly permeable (logPeff < 2)
 
-## **History**
-- The model was incorporated into Ersilia on the 22th of January, 2023.
-- Modifications to the original code.
-    1. Removal of Flask functionalities and dependencies.
-    2. Striping unused functions from the original code.
+## References
 
-- To run the model, follow these [steps](model/README.md).
+* [Publication](https://www.sciencedirect.com/science/article/pii/S0968089621005964)
+* [Source Code](https://github.com/ncats/ncats-adme)
+* Ersilia contributor: [pauline-banye](https://github.com/pauline-banye)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://www.sciencedirect.com/science/article/pii/S0968089621005964) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+
+## License
+
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a None license.
+
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
 
 The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission or [volunteer](https://www.ersilia.io/volunteer) with us!
+[Help us](https://www.ersilia.io/donate) achieve our mission!
