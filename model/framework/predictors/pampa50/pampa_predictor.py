@@ -73,4 +73,7 @@ class PAMPA50Predictor(GcnnBase):
                 )
             )
 
-        return self.predictions_df
+            proba1_df = pd.DataFrame()
+            proba1_df["pampa5_proba1"] = np.around(gcnn_predictions, 3)
+
+        return proba1_df
