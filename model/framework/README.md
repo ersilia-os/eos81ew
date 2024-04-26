@@ -1,9 +1,3 @@
-# **MODEL EOS74BO**
-
-This repository contains the code for the QSAR models for Kinetic Aqueous Solubility endpoints. To use the application locally, you can either use [Git](https://git-scm.com/) to clone the respository, or you can simply download a ZIP file (by clicking the green "Code" button on the top right corner) and then unzip it. The next steps are described below.
-
-`https://github.com/ersilia-os/eos8ykt.git`
-
 #
 ## **Installing required software**
 
