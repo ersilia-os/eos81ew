@@ -1,0 +1,2 @@
+name,type,direction,description
+pampa5_proba1,float,high,Probability of the compound not being permeable in a PAMPA assay at pH=5 (logPeff<1)
