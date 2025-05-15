@@ -15,6 +15,7 @@ from predictors.pampa50.pampa_predictor import PAMPA50Predictor
 input_file = sys.argv[1]
 # pass the output file
 output_file = sys.argv[2]
+output_file = output_file.strip()
 
 def my_model(smiles_list):
     mols = [Chem.MolFromSmiles(smi) for smi in smiles_list]
