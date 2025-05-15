@@ -3,21 +3,18 @@
     "Slug": "ncats-pampa5",
     "Status": "Ready",
     "Title": "Parallel Artificial Membrane Permeability Assay 5",
-    "Description": "Parallel Artificial Membrane Permeability is an in vitro surrogate to determine the permeability of drugs across cellular membranes. PAMPA at pH 5 was experimentally determined in a dataset of 5,473 unique compounds by the NIH-NCATS. 50% of the dataset was used to train a classifier (SVM) to predict the permeability of new compounds, and validated on the remaining 50% of the data, rendering an AUC = 0.88. The Peff was converted to logarithmic, log Peff value lower than 2.0 were considered to have low to moderate permeability, and those with a value higher than 2.5 were considered as high-permeability compounds. Compounds with a value between 2.0 and 2.5 were omitted from the dataset. A subset of the data is available at PubChem (AID 1645871)\n",
+    "Description": "Parallel Artificial Membrane Permeability is an in vitro surrogate to determine the permeability of drugs across cellular membranes. PAMPA at pH 5 was experimentally determined in a dataset of 5,473 unique compounds by the NIH-NCATS. 50% of the dataset was used to train a classifier (SVM) to predict the permeability of new compounds, and validated on the remaining 50% of the data, rendering an AUC = 0.88. The Peff was converted to logarithmic, log Peff value lower than 2.0 were considered to have low to moderate permeability, and those with a value higher than 2.5 were considered as high-permeability compounds. Compounds with a value between 2.0 and 2.5 were omitted from the dataset. A subset of the data is available at PubChem (AID 1645871)",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Property calculation or prediction",
-    "Biomedical Area": [
-        "ADMET"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Probability"
     ],
@@ -29,19 +26,22 @@
         "Permeability",
         "LogP"
     ],
-    "Publication": "https://www.sciencedirect.com/science/article/pii/S0968089621005964",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2022,
+    "Publication": "https://www.sciencedirect.com/science/article/pii/S0968089621005964",
     "Source Code": "https://github.com/ncats/ncats-adme",
     "License": "None",
     "Contributor": "pauline-banye",
     "Incorporation Date": "2023-01-29",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos81ew.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos81ew",
     "Docker Architecture": [
         "AMD64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos81ew.zip",
-    "Deployment": [
-        "Local"
     ]
 }
