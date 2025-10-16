@@ -4,6 +4,7 @@ Parallel Artificial Membrane Permeability is an in vitro surrogate to determine 
 
 This model was incorporated on 2023-01-29.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos81ew`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-01-29.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `ADMET`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `ADME`, `Permeability`, `LogP`
 
 ### Input
