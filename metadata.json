@@ -1,7 +1,7 @@
 {
     "Identifier": "eos81ew",
     "Slug": "ncats-pampa5",
-    "Status": "In maintenance",
+    "Status": "Ready",
     "Title": "Parallel Artificial Membrane Permeability Assay 5",
     "Description": "Parallel Artificial Membrane Permeability (PAMPA) is an in vitro surrogate for drug cellular permeability. NIH-NCATS evaluated 5,473 unique compounds at pH 5. Peff values were converted to log Peff: <2.0 represents low/moderate permeability, >2.5 represents high permeability, and 2.0\u20132.5 were omitted. An SVM classifier trained on 50% of the dataset and validated on the remaining 50% achieved an AUC = 0.88. A subset of the data is available at PubChem (AID 1645871).",
     "Deployment": [
@@ -39,7 +39,7 @@
     "License": "None",
     "Contributor": "pauline-banye",
     "Incorporation Date": "2023-01-29",
-    "Last Packaging Date": "2025-10-16",
+    "Last Packaging Date": "2026-07-06",
     "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos81ew.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos81ew",
@@ -49,10 +49,10 @@
     ],
     "Model Size": 86.0,
     "Environment Size": 2443.0,
-    "Image Size": 2592.77,
-    "Computational Performance 1": 28.8,
-    "Computational Performance 2": 18.46,
-    "Computational Performance 3": 18.7,
-    "Computational Performance 4": 35.96,
-    "Computational Performance 5": 114.04
+    "Image Size": 2609.51,
+    "Computational Performance 1": 25.93,
+    "Computational Performance 2": 15.61,
+    "Computational Performance 3": 15.89,
+    "Computational Performance 4": 30.47,
+    "Computational Performance 5": 96.43
 }
