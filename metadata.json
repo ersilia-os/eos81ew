@@ -3,7 +3,7 @@
     "Slug": "ncats-pampa5",
     "Status": "In maintenance",
     "Title": "Parallel Artificial Membrane Permeability Assay 5",
-    "Description": "Parallel Artificial Membrane Permeability (PAMPA) is an in vitro surrogate for drug cellular permeability. NIH-NCATS evaluated 5,473 unique compounds at pH 5. Peff values were converted to log Peff: <2.0 represents low/moderate permeability, >2.5 represents high permeability, and 2.0–2.5 were omitted. An SVM classifier trained on 50% of the dataset and validated on the remaining 50% achieved an AUC = 0.88. A subset of the data is available at PubChem (AID 1645871).",
+    "Description": "Parallel Artificial Membrane Permeability (PAMPA) is an in vitro surrogate for drug cellular permeability. NIH-NCATS evaluated 5,473 unique compounds at pH 5. Peff values were converted to log Peff: <2.0 represents low/moderate permeability, >2.5 represents high permeability, and 2.0\u20132.5 were omitted. An SVM classifier trained on 50% of the dataset and validated on the remaining 50% achieved an AUC = 0.88. A subset of the data is available at PubChem (AID 1645871).",
     "Deployment": [
         "Local"
     ],
