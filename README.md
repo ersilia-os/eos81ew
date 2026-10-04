@@ -1,6 +1,6 @@
 # Parallel Artificial Membrane Permeability Assay 5
 
-Parallel Artificial Membrane Permeability (PAMPA) is an in vitro surrogate for drug cellular permeability. NIH-NCATS evaluated 5,473 unique compounds at pH 5. Peff values were converted to log Peff: <2.0 represents low/moderate permeability, >2.5 represents high permeability, and 2.0–2.5 were omitted. An SVM classifier trained on 50% of the dataset and validated on the remaining 50% achieved an AUC = 0.88. A subset of the data is available at PubChem (AID 1645871).
+Predicts passive permeability measured by parallel artificial membrane assay at pH 5, the acidic condition approximating the intestinal surface microclimate rather than bulk plasma pH. Williams and colleagues at NCATS generated the underlying measurements in house and examined how well in vitro ADME readouts anticipate oral bioavailability when selecting leads. Being cell-free, the assay isolates passive diffusion and reports nothing about transporter-mediated uptake or efflux.
 
 This model was incorporated on 2023-01-29.Last packaged on 2026-07-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-29.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of a compound being poorly permeable (logPeff < 1)
+- **Interpretation:** Probability of poor passive permeability in a PAMPA assay at pH 5.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
