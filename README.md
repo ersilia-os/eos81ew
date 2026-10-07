@@ -1,6 +1,6 @@
 # Parallel Artificial Membrane Permeability Assay 5
 
-Predicts passive permeability measured by parallel artificial membrane assay at pH 5, the acidic condition approximating the intestinal surface microclimate rather than bulk plasma pH. Williams and colleagues at NCATS generated the underlying measurements in house and examined how well in vitro ADME readouts anticipate oral bioavailability when selecting leads. Being cell-free, the assay isolates passive diffusion and reports nothing about transporter-mediated uptake or efflux.
+Predicts passive permeability in the parallel artificial membrane assay at pH 5, the acidic condition approximating the intestinal surface microclimate rather than bulk plasma pH. Williams and colleagues at NCATS measured about 6,500 samples in house, curated them to 5,227 unique compounds and split low from moderate permeability at 10x10-6 cm/s, with a graph convolutional network reaching an external AUC of 0.84. Being cell-free, the assay says nothing about transporter-mediated uptake or efflux.
 
 This model was incorporated on 2023-01-29.Last packaged on 2026-07-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-29.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of poor passive permeability in a PAMPA assay at pH 5.
+- **Interpretation:** Probability of poor passive permeability at pH 5, meaning effective permeability under 10x10-6 cm/s.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
