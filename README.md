@@ -2,7 +2,8 @@
 
 Predicts passive permeability in the parallel artificial membrane assay at pH 5, the acidic condition approximating the intestinal surface microclimate rather than bulk plasma pH. Williams and colleagues at NCATS measured about 6,500 samples in house, curated them to 5,227 unique compounds and split low from moderate permeability at 10x10-6 cm/s, with a graph convolutional network reaching an external AUC of 0.84. Being cell-free, the assay says nothing about transporter-mediated uptake or efflux.
 
-This model was incorporated on 2023-01-29.Last packaged on 2026-07-06.
+This model was incorporated on 2023-01-29.
+Last packaged on 2026-07-06.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos81ew](https://hub.docker.com/r/ersiliaos/eos81ew)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos81ew.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos81ew.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos81ew_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos81ew_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `86`
